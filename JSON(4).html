@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Accessing JSON Nested object values using dot and [] notation:</p>
+    <div id="myid"></div>
+    <script>
+        var obj={
+            "Name": "John Doe",
+            "City": "New York",
+            "Age": 30,
+            "course":
+            {
+                course1: "Computer Science",
+                course2: "Mathematics",
+                course3: "Physics",
+
+            }
+        };
+        c1=obj.course.course1;
+        c2=obj.course["course2"];
+        c3=obj.course.course3;
+        document.getElementById("myid").innerHTML="Course 1: "+c1+"<br>"+"Course 2: "+c2+"<br>"+"Course 3: "+c3;
+</script>
+</body>
+</html>

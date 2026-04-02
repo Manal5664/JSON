@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- Accessing JSON object value using [] bracket notation -->
+<p>Accessing JSON object value using [] bracket notation:</p>
+<body>
+    <div id="myid">
+
+    </div>
+    <script>
+        var obj={
+            "Name": "John Doe",
+            "City": "New York",
+            "Age": 30,
+        };
+        var name=obj["Name"];
+        var city=obj["City"];
+        var age=obj["Age"];    
+        document.getElementById("myid").innerHTML="Name: "+name+"<br>"+"City: "+city+"<br>"+"Age: "+age;
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Converting Javascript object in to JSON using JSON.stringify method</h1>
+    <div id="myid">
+
+    </div>
+    <script>
+var obj={
+            "Name": "John Doe",
+            "City": "New York",
+            "Age": 30
+        };
+        var data=JSON.stringify(obj);
+        document.getElementById("myid").innerHTML=data;
+
+    </script>
+
+</body>
+</html>
