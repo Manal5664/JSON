@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CRUD Form</title>
+</head>
+<body>
+
+  <h1>Contact Form</h1>
+
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Enter Name">
+    <br><br>
+    <input type="email" id="email" placeholder="Enter Email">
+    <br><br>
+    <textarea id="message" placeholder="Enter Message"></textarea>
+    <br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+
+    const form = document.getElementById("contactForm");
+
+    form.addEventListener("submit", function(e){
+
+      e.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+
+      // JSON
+
+
+      const userData = {
+        name: name,
+        email: email,
+        message: message
+      };
+
+      console.log(userData);
+
+      
+      // localStorage.setItem()
+      // Browser me data save karta hai.
+
+      localStorage.setItem("contactData", JSON.stringify(userData));
+
+      alert("Data saved in Local Storage");
+
+    });
+
+  </script>
+
+</body>
+</html>
